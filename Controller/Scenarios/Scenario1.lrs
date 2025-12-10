@@ -14,23 +14,23 @@ GlobalDir=
 }
 
 {ScenarioPrivateConfig
-Path=
+Path=C:\Users\Administrator\Downloads\load runner\ASSESSMENT_LOAD_RUNNER\Controller\Scenarios\Scenario1.lrs
 Author=Administrator
-Subject=
+Subject=Scenario1
 Description=
 Hosts=1
 Scripts=1
 Groups=1
-Vusers=1
-Tranzactions=0
+Vusers=10
+Tranzactions=14
 Rendezvous=0
-Result_file=C:\Users\Administrator\AppData\Local\Temp\res\res.lrr
-ResCleanName=
+Result_file=C:\Users\Administrator\Downloads\load runner\ASSESSMENT_LOAD_RUNNER\Controller\Results\result1\result1.lrr
+ResCleanName=result1
 ResSymName=
 DEFAULT_NFS_LESS_MODE=1
 AutoSetResults=0
 AutoOverwriteResults=0
-BaseResultsName=
+BaseResultsName=result1
 MaxVuserSeedNumberUsed=0
 PlannedNumOfVusers=1
 PrivatePlannedNumOfVusers=0
@@ -39,8 +39,8 @@ ManualControlAutoAddVusers=1
 TestDirPath=
 TestDirServer=
 TestDirDatabase=
-TestDirCycle=default
-TestDirCycleInstance=1
+TestDirCycle=
+TestDirCycleInstance=
 TestResultsFlag=0
 ScenarioSchedulerMode=1
 ScenarioSchedulerName=Default Schedule
@@ -157,7 +157,7 @@ VuQuitTO=120
 {HostChief
 
 {localhost
-PLATFORM=Windows
+PLATFORM=Windows 10
 IS_REMOTE_LOGIN=0
 REMOTE_LOGIN=
 IS_LOCAL_LOGIN=0
@@ -218,7 +218,61 @@ Trans=quote
 
 {assessment
 
+{4
+5=assessment
+9=localhost
+SEED_NUM=0
+}
+
+{3
+5=assessment
+9=localhost
+SEED_NUM=0
+}
+
+{2
+5=assessment
+9=localhost
+SEED_NUM=0
+}
+
 {1
+5=assessment
+9=localhost
+SEED_NUM=0
+}
+
+{10
+5=assessment
+9=localhost
+SEED_NUM=0
+}
+
+{9
+5=assessment
+9=localhost
+SEED_NUM=0
+}
+
+{8
+5=assessment
+9=localhost
+SEED_NUM=0
+}
+
+{7
+5=assessment
+9=localhost
+SEED_NUM=0
+}
+
+{6
+5=assessment
+9=localhost
+SEED_NUM=0
+}
+
+{5
 5=assessment
 9=localhost
 SEED_NUM=0
@@ -460,7 +514,7 @@ GraphYAxisName=# of Errors
 XAxisLabelsStyle=RelativeTime
 AggregateFunction=Sum
 ShowChaosEvents=YES
-Is_On_Panel=-1
+Is_On_Panel=6
 Description=Displays details about the number of errors that accrue during each second of the scenario or session step run.
 ColumnCaption_0=Color
 ColumnCaption_1=Scale
@@ -481,7 +535,7 @@ GraphYAxisName=# of Vusers with specific error
 XAxisLabelsStyle=RelativeTime
 AggregateFunction=Last
 ShowChaosEvents=YES
-Is_On_Panel=-1
+Is_On_Panel=5
 Description=Displays details about the number of Vusers that generate errors during scenario or session step execution.
 ColumnCaption_0=Color
 ColumnCaption_1=Scale
@@ -817,7 +871,7 @@ GraphYAxisName=#Transactions
 XAxisLabelsStyle=RelativeTime
 AggregateFunction=Sum
 ShowChaosEvents=YES
-Is_On_Panel=-1
+Is_On_Panel=8
 Description=Total Passed Trans
 ColumnCaption_0=Color
 ColumnCaption_1=Scale
@@ -838,7 +892,7 @@ GraphYAxisName=#Transactions
 XAxisLabelsStyle=RelativeTime
 AggregateFunction=Sum
 ShowChaosEvents=YES
-Is_On_Panel=-1
+Is_On_Panel=7
 Description=Total Failed Trans
 ColumnCaption_0=Color
 ColumnCaption_1=Scale
@@ -922,7 +976,7 @@ GraphYAxisName=#HTTP/sec
 XAxisLabelsStyle=RelativeTime
 AggregateFunction=SumPerSec
 ShowChaosEvents=YES
-Is_On_Panel=-1
+Is_On_Panel=9
 Description=Displays the number of the different HTTP status codes returned from the Web server during each second of the load test.
 ColumnCaption_0=Color
 ColumnCaption_1=Scale
@@ -1702,7 +1756,7 @@ MachinesCount=IntV1|0
 }
 
 {ScenarioDiagnostics
-XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "OracleDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "WebPage" enabled= "1" ></Mediator><Mediator type= "J2EE" enabled= "0" ></Mediator><Mediator type= "SiebelDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type="SAP" enabled="0"><Machine name="" type="Win2000"><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY><SERVER host="" instance="" RouterString=""><LOGIN username="" password="69395228e" client_num=""/></SERVER></TOPOLOGY></Mediator></Mediators>
+XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "OracleDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "WebPage" enabled= "1" ></Mediator><Mediator type= "J2EE" enabled= "0" ></Mediator><Mediator type= "SiebelDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type="SAP" enabled="0"><Machine name="" type="Win2000"><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY><SERVER host="" instance="" RouterString=""><LOGIN username="" password="693957f4e" client_num=""/></SERVER></TOPOLOGY></Mediator></Mediators>
 }
 
 {ScenarioSchedulerConfig
@@ -1733,10 +1787,10 @@ XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabl
                   <PrevAction />
                 </StartCondition>
                 <Batch>
-                  <Count>1</Count>
-                  <Interval>15</Interval>
+                  <Count>10</Count>
+                  <Interval>120</Interval>
                 </Batch>
-                <TotalVusersNumber>1</TotalVusersNumber>
+                <TotalVusersNumber>10</TotalVusersNumber>
               </RampUp>
               <Duration>
                 <StartCondition>
@@ -1750,7 +1804,7 @@ XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabl
                 </StartCondition>
                 <Batch>
                   <Count>1</Count>
-                  <Interval>30</Interval>
+                  <Interval>10</Interval>
                 </Batch>
               </RampDownAll>
             </DynamicScheduling>
@@ -1802,7 +1856,7 @@ XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabl
 }
 
 {ScenarioSLAConfig
-<?xml version="1.0" encoding="UTF-8"?><SLA Version="1.0"><TxList></TxList><SLARules><TrackingPeriodType>Default</TrackingPeriodType><TrackingPeriodValue></TrackingPeriodValue><TrackingPeriodTimeScale></TrackingPeriodTimeScale></SLARules></SLA>
+<?xml version="1.0" encoding="UTF-8"?><SLA Version="1.0"><TxList><Tx>product_data_Transaction</Tx><Tx>truck</Tx><Tx>insurant_data_Transaction</Tx><Tx>vuser_end_Transaction</Tx><Tx>vehicle_data_Transaction</Tx><Tx>send_quote_Transaction</Tx><Tx>insurant</Tx><Tx>price</Tx><Tx>product</Tx><Tx>vuser_init_Transaction</Tx><Tx>vehicle</Tx><Tx>price_data_Transaction</Tx><Tx>truck_Transaction</Tx><Tx>quote</Tx></TxList><SLARules><TrackingPeriodType>Default</TrackingPeriodType><TrackingPeriodValue></TrackingPeriodValue><TrackingPeriodTimeScale></TrackingPeriodTimeScale><RulesGroup Type="PercentileRule"><Name>Percentile Based Rules</Name><PercentileRule Name="transaction_response_time_percentile_insurant"><Percentage>90</Percentage><Value>3</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>insurant</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_insurant_data_Transaction"><Percentage>90</Percentage><Value>3</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>insurant_data_Transaction</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_price"><Percentage>90</Percentage><Value>3</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>price</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_price_data_Transaction"><Percentage>90</Percentage><Value>3</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>price_data_Transaction</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_product"><Percentage>90</Percentage><Value>3</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>product</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_product_data_Transaction"><Percentage>90</Percentage><Value>3</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>product_data_Transaction</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_quote"><Percentage>90</Percentage><Value>3</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>quote</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_send_quote_Transaction"><Percentage>90</Percentage><Value>3</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>send_quote_Transaction</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_truck"><Percentage>90</Percentage><Value>3</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>truck</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_truck_Transaction"><Percentage>90</Percentage><Value>3</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>truck_Transaction</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_vehicle"><Percentage>90</Percentage><Value>3</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>vehicle</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_vehicle_data_Transaction"><Percentage>90</Percentage><Value>3</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>vehicle_data_Transaction</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_vuser_end_Transaction"><Percentage>90</Percentage><Value>3</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>vuser_end_Transaction</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_vuser_init_Transaction"><Percentage>90</Percentage><Value>3</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>vuser_init_Transaction</SubMeasurement></PercentileRule></RulesGroup></SLARules></SLA>
 }
 
 {ScenarioSEVConfig
