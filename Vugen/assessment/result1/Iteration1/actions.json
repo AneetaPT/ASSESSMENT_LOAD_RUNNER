@@ -1,0 +1,100 @@
+[
+    {
+        "actionName": "truck",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: sampleapp.tricentis.com",
+                "infFile": "t1.inf",
+                "time": 1765363966301
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Url: app.php",
+                "infFile": "t5.inf",
+                "time": 1765363974180
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "truck",
+                "rawStartTime": 1765363966304,
+                "rawEndTime": 1765363974185,
+                "thinkTime": 0.0,
+                "wastedTime": 0.04186582565307617
+            }
+        ]
+    },
+    {
+        "actionName": "vehicle_data",
+        "steps": [],
+        "transactions": [
+            {
+                "transactionName": "vehicle",
+                "rawStartTime": 1765363974218,
+                "rawEndTime": 1765363974233,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0
+            }
+        ]
+    },
+    {
+        "actionName": "insurant_data",
+        "steps": [],
+        "transactions": [
+            {
+                "transactionName": "insurant",
+                "rawStartTime": 1765363974265,
+                "rawEndTime": 1765363974280,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0
+            }
+        ]
+    },
+    {
+        "actionName": "product_data",
+        "steps": [],
+        "transactions": [
+            {
+                "transactionName": "product",
+                "rawStartTime": 1765363974312,
+                "rawEndTime": 1765363974327,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0
+            }
+        ]
+    },
+    {
+        "actionName": "price_data",
+        "steps": [],
+        "transactions": [
+            {
+                "transactionName": "price",
+                "rawStartTime": 1765363974358,
+                "rawEndTime": 1765363974374,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0
+            }
+        ]
+    },
+    {
+        "actionName": "send_quote",
+        "steps": [
+            {
+                "stepId": "STEP3",
+                "stepName": "Submit Data: quote.php",
+                "infFile": "t6.inf",
+                "time": 1765363974870
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "quote",
+                "rawStartTime": 1765363974406,
+                "rawEndTime": 1765363984908,
+                "thinkTime": 10.012685,
+                "wastedTime": 0.0065991878509521488
+            }
+        ]
+    }
+]
